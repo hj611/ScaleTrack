@@ -43,7 +43,4 @@ for checkpoint in "${!checkpoints[@]}"; do
     echo "Finished evaluation for $checkpoint with GPUs $GPU_DEVICES"
 done
 
-# 等待所有后台进程完成
-wait
-
-python /mnt/dolphinfs/hdd_pool/docker/user/hadoop-basecv/huangjing/code/tools/tools/gpu_util.py
+ 
